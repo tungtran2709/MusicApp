@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_music_notification"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_100"
+        android:src="@drawable/ic_music" />
+
+    <TextView
+        android:id="@+id/text_name_song_notification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_toRightOf="@+id/image_music_notification"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_name_singer_notification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:layout_below="@+id/text_name_song_notification"
+        android:layout_toRightOf="@+id/image_music_notification" />
+
+    <ImageButton
+        android:id="@+id/button_previous_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_name_singer_notification"
+        android:layout_toRightOf="@id/image_music_notification"
+        android:src="@drawable/ic_previous" />
+
+    <ImageButton
+        android:id="@+id/button_play_pause_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_name_singer_notification"
+        android:layout_toRightOf="@+id/button_previous_notification"
+        android:src="@drawable/ic_play" />
+
+    <ImageButton
+        android:id="@+id/button_next_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_name_singer_notification"
+        android:layout_toRightOf="@+id/button_play_pause_notification"
+        android:src="@drawable/ic_next" />
+
+    <ImageButton
+        android:id="@+id/button_close_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_name_singer_notification"
+        android:layout_toRightOf="@id/button_next_notification"
+        android:src="@drawable/ic_close" />
+</RelativeLayout>
